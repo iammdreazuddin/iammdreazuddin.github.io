@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Reaz Uddin | Portfolio </title>
+    <meta name="description" content="Assistant Manager in Performance Reporting specializing in KPI analysis, Excel automation, and business intelligence">
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/microsoft-excel.png">
+    <style>
+        :root {
+            --primary: #00ab6c;
+            --secondary: #ecf0f1;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+            --accent: #e74c3c;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --medium-green: #00ab6c;
+            --medium-dark-green: #007a4f;
+            --purple: #9b59b6;
+            --orange: #e67e22;
+            --yellow: #f1c40f;
+                /* Primary colors */
+            --primary: #00ab6c; /* Green */
+            --secondary: #7c1e1e; /* Dark Red */
+            --accent: #e74c3c; /* Red */
+            --purple: #9b59b6; /* Purple */
+            --orange: #e67e22; /* Orange */
+            --yellow: #f1c40f; /* Yellow */
+
+            /* Neutral colors */
+            --dark: #2c3e50; /* Dark */
+            --light: #ecf0f1; /* Light */
+            --gray-dark: #34495e; /* Dark Gray */
+            --gray-medium: #95a5a6; /* Medium Gray */
+            --gray-light: #bdc3c7; /* Light Gray */
+
+            /* Blue tones */
+            --blue: #3498db; /* Blue */
+            --light-blue: #a3c8f7; /* Light Blue */
+            --dark-blue: #2980b9; /* Dark Blue */
+            --sky-blue: #00a9e0; /* Sky Blue */
+
+            /* Green tones */
+            --light-green: #a8e6a1; /* Light Green */
+            --dark-green: #006400; /* Dark Green */
+            --lime-green: #32cd32; /* Lime Green */
+            --olive-green: #808000; /* Olive Green */
+            
+            /* Red tones */
+            --light-red: #f1948a; /* Light Red */
+            --dark-red: #8b0000; /* Dark Red */
+            --rose-red: #d36f6f; /* Rose Red */
+
+            /* Brown tones */
+            --brown: #6e4b3d; /* Brown */
+            --light-brown: #d2b48c; /* Tan */
+            --dark-brown: #4b2c20; /* Dark Brown */
+
+            /* Pink tones */
+            --light-pink: #f6c8d8; /* Light Pink */
+            --hot-pink: #ff69b4; /* Hot Pink */
+            --deep-pink: #ff1493; /* Deep Pink */
+
+            /* Cyan tones */
+            --cyan: #1abc9c; /* Cyan */
+            --light-cyan: #b3e0f2; /* Light Cyan */
+            --dark-cyan: #16a085; /* Dark Cyan */
+
+            /* Additional colors */
+            --indigo: #4b0082; /* Indigo */
+            --teal: #008080; /* Teal */
+            --gold: #ffd700; /* Gold */
+            --peach: #ffcc99; /* Peach */
+            --lavender: #e6e6fa; /* Lavender */
+            --mint: #98ff98; /* Mint */
+            --charcoal: #36454f; /* Charcoal */
+            
+            /* Shadow and border effects */
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+            --border-radius: 8px; /* Border radius for elements */
+            --border-light: 1px solid #bdc3c7; /* Light border */
+
+            --transition: all 0.4s ease;
+            --glass-bg: rgba(255, 255, 255, 0.15);
+            --glass-blur: blur(10px);
+            --glass-border: rgba(255, 255, 255, 0.3);
+
+            
+            --light-red: #e74c3c;
+            --heading-glow: rgba(0, 171, 108, 0.2);
+          
+
+        }
+        
+        /* Animated Gradient Background */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(-45deg, #f1f4f9, #dbe9f4, #f7fafd, #e9f1f7);
+            background-size: 400% 400%;
+            animation: gradientBG 20s ease infinite;
+        }
+
+        
+        /* Profile Picture Animation */
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 1.5rem;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 10px 25px rgba(52, 152, 219, 0.3);
+            overflow: hidden;
+            position: relative;
+            transition: all 0.5s ease;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        #profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s, filter 0.5s;
+            filter: grayscale(20%);
+        }
+
+        .profile-picture:hover {
+            box-shadow: 0 15px 35px rgba(52, 152, 219, 0.5);
+            border-color: var(--secondary);
+        }
+
+        .profile-picture:hover #profile-img {
+            transform: scale(1.1);
+            filter: grayscale(0%);
+        }
+
+        /* Header Animation */
+        header {
+            background: linear-gradient(135deg, var(--dark), var(--primary));
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+            animation: headerEntrance 1s ease-out;
+        }
+
+        @keyframes headerEntrance {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(46, 204, 113, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 80% 70%, rgba(231, 76, 60, 0.1) 0%, transparent 20%);
+            animation: pulse 15s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+            100% { opacity: 0.3; }
+        }
+
+        /* Tag Animation */
+        .tag {
+            background: rgba(4, 240, 240, 0.329);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+            transform: scale(1);
+        }
+
+        .tag:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+        }
+
+        /* Section Entrance Animation */
+        section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            border-top: 3px solid var(--primary);
+            transition: all 0.5s ease;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s forwards;
+        }
+
+        @keyframes fadeInUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Delay section animations */
+        section:nth-child(1) { animation-delay: 0.1s; }
+        section:nth-child(2) { animation-delay: 0.2s; }
+        section:nth-child(3) { animation-delay: 0.3s; }
+        section:nth-child(4) { animation-delay: 0.4s; }
+        section:nth-child(5) { animation-delay: 0.5s; }
+        section:nth-child(6) { animation-delay: 0.6s; }
+        section:nth-child(7) { animation-delay: 0.7s; }
+
+
+        /* Colorful Skills Section */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            justify-content: center;
+        }
+
+        .skill {
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            color: white;
+            font-weight: 500;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+
+        /* Different colors for different skill categories */
+        .skill:nth-child(1) { background: linear-gradient(135deg, #2ecc71, #27ae60); } /* Excel VBA */
+        .skill:nth-child(2) { background: linear-gradient(135deg, #3498db, #2980b9); } /* Power BI */
+        .skill:nth-child(3) { background: linear-gradient(135deg, #e74c3c, #c0392b); } /* SQL */
+        .skill:nth-child(4) { background: linear-gradient(135deg, #9b59b6, #8e44ad); } /* Python */
+        .skill:nth-child(5) { background: linear-gradient(135deg, #1abc9c, #16a085); } /* Power Automate */
+        .skill:nth-child(6) { background: linear-gradient(135deg, #e67e22, #d35400); } /* Tableau */
+        .skill:nth-child(7) { background: linear-gradient(135deg, #34495e, #2c3e50); } /* Network Analytics */
+        .skill:nth-child(8) { background: linear-gradient(135deg, #f39c12, #e67e22); } /* Huawei/Juniper/ZTE */
+        .skill:nth-child(9) { background: linear-gradient(135deg, #e74c3c, #c0392b); } /* MTTE/MTTR */
+        .skill:nth-child(10) { background: linear-gradient(135deg, #3498db, #2980b9); } /* SLA Reporting */
+
+        /* Hover Effect */
+        .skill:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            opacity: 0.9;
+        }
+
+        /* Pulse animation on icons */
+        .skill i {
+            margin-right: 8px;
+            transition: transform 0.3s;
+        }
+
+        .skill:hover i {
+            transform: scale(1.2);
+        }
+
+        .skill::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: all 0.5s;
+        }
+
+        .skill:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .skill:hover::before {
+            left: 100%;
+        }
+        
+
+        /* Project Card Animation */
+        /* Colorful Project Cards */
+        .project-card {
+            padding: 1.8rem;
+            border-radius: 10px;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            position: relative;
+            overflow: hidden;
+            color: white;
+            border: none;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        /* Different light transparent gradient for each project card */
+        .project-card:nth-child(1) {
+            border-left: 4px solid var(--indigo);
+        }
+
+        .project-card:nth-child(2) {
+            border-left: 4px solid var(--teal);
+        }
+
+        .project-card:nth-child(3) {
+            border-left: 4px solid var(--rose-red);
+        }
+
+        /* Hover Effects */
+        .project-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            z-index: 2;
+        }
+
+        .project-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+            transition: all 0.6s;
+        }
+
+        .project-card:hover::before {
+            left: 100%;
+        }
+
+        /* Text Styling */
+        .project-card h3 {
+            color: rgba(112, 59, 119, 0.85);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .project-card h3::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: rgba(255,255,255,0.5);
+            transition: all 0.3s;
+        }
+
+        .project-card:hover h3::after {
+            width: 100%;
+            background: rgb(233, 236, 5);
+        }
+
+        .project-card p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .project-card .impact {
+            background: #2c3e50;
+            display: inline-block;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-weight: 500;
+            color: white;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+
+        /* Education Timeline Animation */
+        .education-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            transform: translateX(-50%);
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(52, 152, 219, 0.3);
+        }
+
+        .education-item:hover .education-icon {
+            background: var(--secondary);
+            transform: translateX(-50%) scale(1.1);
+        }
+
+        /* Contact Link Animation */
+        .contact-link {
+            display: flex;
+            align-items: center;
+            color: var(--indigo);
+            text-decoration: none;
+            transition: all 0.3s;
+            padding: 0.5rem;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-link::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s;
+        }
+
+        .contact-link:hover {
+            color: var(--accent);
+            padding-left: 0.8rem;
+        }
+
+        .contact-link:hover::before {
+            width: 100%;
+        }
+
+        /* CTA Button Animation */
+        .cta-btn {
+            display: inline-block;
+            background: white;
+            color: var(--primary);
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .cta-btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            transition: width 0.5s;
+            z-index: -1;
+        }
+
+        .cta-btn:hover {
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-btn:hover::before {
+            width: 100%;
+        }
+
+        /* Footer Animation */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--dark);
+            color: white;
+            position: relative;
+        }
+
+        footer::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent), var(--purple), var(--orange));
+            animation: rainbow 5s linear infinite;
+            background-size: 500% 100%;
+        }
+
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        
+        /* Make article cards fully clickable */
+        .article-card {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Style adjustments for the link inside */
+        .article-card .article-link {
+            display: inline-flex;
+            margin-top: 12px;
+            color: var(--medium-green) !important;
+            font-weight: 600;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .article-card .article-link::before {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--medium-dark-green);
+            transition: width 0.3s;
+        }
+
+        .article-card:hover .article-link {
+            color: var(--medium-dark-green) !important;
+        }
+
+        .article-card:hover .article-link::before {
+            width: 100%;
+        }
+
+        .article-card .article-link::after {
+            content: "→";
+            margin-left: 5px;
+            transition: transform 0.3s;
+        }
+
+        .article-card:hover .article-link::after {
+            transform: translateX(5px);
+        }
+
+        .article-card:active {
+            transform: scale(0.98);  /* Slight shrink effect on click */
+            transition: transform 0.1s;
+        }
+
+        
+
+        /* Article Link Animation */
+        .article-link {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 12px;
+            color: var(--medium-green) !important;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .article-link::before {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--medium-dark-green);
+            transition: width 0.3s;
+        }
+
+        .article-link:hover {
+            color: var(--medium-dark-green) !important;
+        }
+
+        .article-link:hover::before {
+            width: 100%;
+        }
+
+        .article-link::after {
+            content: "→";
+            margin-left: 5px;
+            transition: transform 0.3s;
+        }
+
+        .article-link:hover::after {
+            transform: translateX(5px);
+        }
+
+        /* Medium Button Animation */
+        .medium-btn {
+            background: var(--medium-green);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .medium-btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: all 0.5s;
+        }
+
+        .medium-btn:hover::before {
+            left: 100%;
+        }
+
+        /* Floating Elements Animation */
+        @keyframes floatElement {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .floating {
+            animation: floatElement 6s ease-in-out infinite;
+        }
+
+        /* Rainbow Text Animation */
+        .rainbow-text {
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent), var(--purple), var(--orange));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 300% 100%;
+            animation: rainbow 5s linear infinite;
+        }
+
+        /* Existing styles remain the same below this point */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+        }
+        
+        .tagline {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        /* h2 {
+            color: var(--primary);
+            border-bottom: 3px solid var(--light-red);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+        } */
+        
+
+/* Upgraded h2 */
+h2 {
+    position: relative;
+    color: var(--primary);
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.8rem;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    animation: fadeGlow 1.5s ease-in-out both;
+}
+
+/* Animated underline */
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 60px;
+    background: linear-gradient(90deg, var(--primary), var(--light-red));
+    border-radius: 4px;
+    animation: slideInUnderline 1s ease-in-out forwards;
+}
+
+/* Fade-glow animation */
+@keyframes fadeGlow {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+        text-shadow: none;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        text-shadow: 0 2px 6px var(--heading-glow);
+    }
+}
+
+@keyframes slideInUnderline {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 60px;
+        opacity: 1;
+    }
+}
+
+        h2 i {
+            margin-right: 0.5rem;
+        }
+        
+        h3 {
+            color: var(--dark);
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        h3 i {
+            margin-right: 0.5rem;
+            color: var(--primary);
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .project-card p {
+            margin-bottom: 0.8rem;
+            color: #555;
+        }
+        
+        .project-card .impact {
+            font-weight: bold;
+             color: var(--light-blue);
+        }
+        
+        /* Articles Section Styling */
+        #articles {
+            background: #fafafa;
+            border-top: 3px solid var(--medium-green);
+        }
+        
+        /* #articles h2 {
+            color: var(--lime-green);
+            border-bottom-color: var(--secondary);
+        }
+        
+        #articles h2 i {
+            color: var(--medium-green); */
+        }
+        
+        #articles .project-card {
+            border-left: 4px solid var(--indigo);
+        }
+        
+        #articles .project-card:hover, .tag:hover {
+            box-shadow: 0 8px 25px rgba(0, 171, 108, 0.15);
+        }
+        
+        /* Education Timeline */
+        .education-timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .education-timeline::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 15px;
+            height: 100%;
+            width: 2px;
+            background: var(--primary);
+            opacity: 0.3;
+        }
+
+        .education-item {
+            position: relative;
+            margin-bottom: 2rem;
+            display: flex;
+        }
+
+        .education-content {
+            margin-left: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .education-item:last-child .education-content {
+            border-bottom: none;
+        }
+
+        .education-item h3 {
+            color: var(--dark);
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .education-duration {
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .education-major {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+
+        .education-description {
+            color: #777;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .education-content {
+                margin-left: 30px;
+            }
+        }
+
+
+        
+
+        /* Experience Section Container */
+        .experience-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 12px;
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+            transform: translateY(20px);
+            opacity: 0;
+            animation: fadeInUp 0.6s ease forwards;
+            transition: var(--transition);
+        }
+
+        /* Animation Delay Per Item (optional for staggered effect) */
+        .experience-item:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        .experience-item:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        .experience-item:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        /* Header */
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .experience-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--dark);
+        }
+
+        .experience-company {
+            color: var(--primary);
+            font-style: italic;
+        }
+
+        .experience-duration {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Hover Animation */
+        .experience-item:hover {
+            transform: translateY(-4px) scale(1.01);
+            box-shadow: 0 12px 30px rgba(0, 171, 108, 0.1);
+        }
+
+        /* Section Backgrounds */
+        #expertise, #about, #skills, #contact, #education, #projects, #articles {
+            background: linear-gradient(135deg, rgba(52, 152, 219, 0.04), rgba(46, 204, 113, 0.04));
+            border-radius: 14px;
+            padding: 2rem;
+            border-top: 4px solid var(--primary);
+            transition: var(--transition);
+        }
+
+        /* Expertise Items */
+        .expertise-item {
+            margin-bottom: 2rem;
+            padding-bottom: 1.25rem;
+            border-bottom: 1px dashed #ccc;
+            transition: var(--transition);
+        }
+
+        .expertise-item:last-child {
+            border-bottom: none;
+        }
+
+        .expertise-item p {
+            color: #444;
+            line-height: 1.75;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeInUp {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .cta {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: 
+                radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%),
+                repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255,255,255,0.05) 5px, rgba(255,255,255,0.05) 10px);
+            animation: rotate 20s linear infinite;
+        }
+        
+        @keyframes rotate {
+            100% { transform: rotate(360deg); }
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta h2 {
+            color: white;
+            border-bottom: none;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .projects {
+                grid-template-columns: 1fr;
+            }
+            
+            .experience-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="profile-picture floating">
+            <img src="profile.jpg" alt="MD Reaz Uddin" id="profile-img">
+        </div>
+        
+        <h1>MD Reaz Uddin</h1>
+        <p>Assistant Manager, Performance Reporting, OSS | Summit Communications Ltd.</p>
+        <div class="tagline">
+            <span class="tag">📡 KPI Performance Reporting</span>
+            <span class="tag">📊 Data Analytics & Insights</span>
+            <span class="tag">💻 Excel Macros & VBA</span>
+            <span class="tag">📑 SQL & Query</span>
+            <span class="tag">🤖 Power Query</span>
+            <span class="tag">🌐 DAX & BI</span>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="about">
+            <h2><i class="fas fa-user-tie"></i> Professional Profile</h2>
+            <p>Performance Reporting Specialist with 5+ years of experience in transforming data into actionable insights at Summit Communications Ltd. Passionate about data-driven decision-making in the telecommunications sector.</p>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <span class="experience-title">Assistant Manager, Performance Reporting</span>
+                        <span class="experience-company">Summit Communications Ltd.</span>
+                    </div>
+                    <span class="experience-duration">2019 - Present</span>
+                </div>
+                <p>OSS Department | Reporting to Head of Service Assurance</p>
+            </div>
+        </section>
+        
+        <section id="expertise">
+            <h2><i class="fas fa-star"></i> Core Expertise</h2>
+            
+            <div class="expertise-item">
+                <h3><i class="fas fa-chart-line"></i> Management Reporting</h3>
+                <p>Specialize in creating comprehensive KPI reports covering regional performance metrics to client service insights. Develop executive dashboards that facilitate data-driven decision making across the organization.</p>
+            </div>
+            
+            <div class="expertise-item">
+                <h3><i class="fas fa-shield-alt"></i> Performance & Data Integrity</h3>
+                <p>Oversee analysis of key metrics including bandwidth utilization and network efficiency. Implement validation processes ensuring 99.9% accuracy in all reported data used for strategic business decisions.</p>
+            </div>
+            
+            <div class="expertise-item">
+                <h3><i class="fas fa-users"></i> Cross-Functional Collaboration</h3>
+                <p>Work closely with Network Monitoring, Planning, Central Operations, Marketing, Billing, and CRM teams to align reporting with strategic goals. Bridge technical and business units through clear data communication.</p>
+            </div>
+            
+            <div class="expertise-item">
+                <h3><i class="fas fa-robot"></i> Process Automation</h3>
+                <p>As company's sole Excel trainer, have trained 300+ colleagues in advanced data techniques. Developed 15+ automation tools that reduced manual reporting time by 80% across departments.</p>
+            </div>
+        </section>
+        
+
+        <section id="skills">
+            <h2><i class="fas fa-tools"></i> Technical Skills</h2>
+            <div class="skills">
+                <span class="skill"><i class="fas fa-file-excel"></i> Excel VBA</span>
+                <span class="skill"><i class="fas fa-chart-line"></i> Power BI</span>
+                <span class="skill"><i class="fas fa-database"></i> SQL</span>
+                <span class="skill"><i class="fab fa-python"></i> Python</span>
+                <span class="skill"><i class="fas fa-robot"></i> Power Automate</span>
+                <span class="skill"><i class="fas fa-chart-pie"></i> Tableau</span>
+                <span class="skill"><i class="fas fa-network-wired"></i> Network Analytics</span>
+                <span class="skill"><i class="fas fa-server"></i> Huawei/Juniper/ZTE</span>
+                <span class="skill"><i class="fas fa-clock"></i> MTTE/MTTR Analysis</span>
+                <span class="skill"><i class="fas fa-file-contract"></i> SLA Reporting</span>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2><i class="fas fa-project-diagram"></i> Key Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Automated Executive Dashboard</h3>
+                    <p>Developed Power BI dashboards that aggregate data from multiple sources to provide real-time visibility into network performance and business KPIs.</p>
+                    <p class="impact">Impact: Reduced monthly reporting time by 75% for leadership team.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Network Health Monitoring System</h3>
+                    <p>Created automated alerts using Python that notify operations team of potential network issues before they impact customers.</p>
+                    <p class="impact">Impact: 30% reduction in customer-reported outages.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Excel Automation Framework</h3>
+                    <p>Built library of 50+ VBA macros that standardized reporting across departments and eliminated manual errors.</p>
+                    <p class="impact">Impact: Adopted company-wide, saving 200+ hours monthly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="articles">
+            <h2><i class="fas fa-newspaper"></i> Featured Articles</h2>
+            <div class="projects">
+                <a href="https://medium.com/@reazsummit/my-journey-with-tableau-visualizing-sales-data-159b9a09d273" target="_blank" class="project-card article-card">
+                    <h3>My Journey with Tableau</h3>
+                    <p>Visualizing sales data and deriving business insights through Tableau dashboards.</p>
+                    <span class="article-link">Read Article</span>
+                </a>
+                
+                <a href="https://medium.com/@reazsummit/power-bi-project-summary-analyzing-sales-and-shipping-data-38ae71c88763" target="_blank" class="project-card article-card">
+                    <h3>Power BI Sales Analysis</h3>
+                    <p>End-to-end project analyzing sales and shipping data patterns.</p>
+                    <span class="article-link">Read Article</span>
+                </a>
+                
+                <a href="https://medium.com/@reazsummit/automating-file-renaming-with-vba-a-personal-journey-24b760ba2f96" target="_blank" class="project-card article-card">
+                    <h3>VBA File Renaming</h3>
+                    <p>Automating tedious file organization tasks with VBA macros.</p>
+                    <span class="article-link">Read Article</span>
+                </a>
+        
+                <a href="https://medium.com/@reazsummit/automating-remote-file-retrieval-with-python-a-step-by-step-guide-45cf62b32c57" target="_blank" class="project-card article-card">
+                    <h3>Python Remote File Retrieval</h3>
+                    <p>Step-by-step guide to automating file downloads.</p>
+                    <span class="article-link">Read Article</span>
+                </a>
+        
+                <a href="https://medium.com/@reazsummit/how-i-automated-my-weekly-reporting-process-using-vba-a-journey-from-manual-to-automated-b4bb52368069" target="_blank" class="project-card article-card">
+                    <h3>VBA SLA Reports</h3>
+                    <p>How I automated weekly reporting for 90% time savings.</p>
+                    <span class="article-link">Read Article</span>
+                </a>
+        
+                <a href="https://medium.com/@reazsummit/excel-hack-merge-files-in-seconds-with-vba-no-more-copy-paste-ccec36148d78" target="_blank" class="project-card article-card">
+                    <h3>Excel File Merging</h3>
+                    <p>VBA script to combine files instantly.</p>
+                    <span class="article-link">Read Article</span>
+                </a>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="https://medium.com/@reazsummit" target="_blank" class="cta-btn medium-btn">
+                    <i class="fab fa-medium"></i> View All Articles on Medium
+                </a>
+            </div>
+        </section>
+        
+        <section id="education">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            
+            <div class="education-timeline">
+                <!-- School -->
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Feni Govt. Pilot High School (FGPHS)</h3>
+                        <p class="education-duration">2005 - 2010</p>
+                        <p class="education-major">Science</p>
+                        <p class="education-description">Secondary School Certificate (SSC)</p>
+                    </div>
+                </div>
+                
+                <!-- College -->
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Feni Govt. College (FGC)</h3>
+                        <p class="education-duration">2010 - 2012</p>
+                        <p class="education-major">Science</p>
+                        <p class="education-description">Higher Secondary Certificate (HSC)</p>
+                    </div>
+                </div>
+                
+                <!-- University -->
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>American International University - Bangladesh (AIUB)</h3>
+                        <p class="education-duration">2013 - 2017</p>
+                        <p class="education-major">Computer Science and Engineering (CSE)</p>
+                        <p class="education-description">Bachelor of Science (BSc)</p>
+                    </div>
+                </div>
+                
+                <!-- Masters -->
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Jahangirnagar University (JU)</h3>
+                        <p class="education-duration">2024 - Present</p>
+                        <p class="education-major">Applied Statistics and Data Science (ASDS)</p>
+                        <p class="education-description">Masters (Running)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+  
+        <section id="contact">
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:reazsummit@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope"></i> reazsummit@gmail.com
+                </a>
+                <a href="tel:+8801832639650" class="contact-link">
+                    <i class="fas fa-phone"></i> +880 1832 639650
+                </a>
+                <a href="https://www.linkedin.com/in/iammdreazuddin/" target="_blank" class="contact-link">
+                    <i class="fab fa-linkedin"></i> linkedin.com/in/iammdreazuddin
+                </a>
+                <a href="https://medium.com/@reazsummit" target="_blank" class="contact-link">
+                    <i class="fab fa-medium"></i> medium.com/@reazsummit
+                </a>
+                <a href="https://t.me/MD_Reaz_Uddin" target="_blank" class="contact-link">
+                    <i class="fab fa-telegram"></i> @MD_Reaz_Uddin
+                </a>
+            </div>
+        </section>
+        
+        <section class="cta">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Data Strategy?</h2>
+                <p>Let's discuss how automation and analytics can drive your business forward.</p>
+                <a href="mailto:reazsummit@gmail.com" class="cta-btn">Schedule Consultation</a>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 MD Reaz Uddin. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+            Built with <i class="fas fa-heart" style="color: var(--accent);"></i> for data-driven excellence
+        </p>
+    </footer>
+
+    <script>
+        // Add scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate elements when they come into view
+            const animateOnScroll = function() {
+                const elements = document.querySelectorAll('section, .project-card, .education-item, .expertise-item');
+                
+                elements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementPosition < windowHeight - 100) {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+            
+            // Run once on load
+            animateOnScroll();
+            
+            // Run on scroll
+            window.addEventListener('scroll', animateOnScroll);
+            
+            // Add floating animation to random elements
+            const floatingElements = document.querySelectorAll('.project-card, .skill');
+            floatingElements.forEach(el => {
+                // Random delay and duration for more natural effect
+                const delay = Math.random() * 5;
+                const duration = 5 + Math.random() * 5;
+                el.style.animation = `floatElement ${duration}s ease-in-out ${delay}s infinite`;
+            });
+        });
+    </script>
+</body>
+</html>
