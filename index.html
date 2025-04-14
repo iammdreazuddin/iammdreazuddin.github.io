@@ -53,7 +53,7 @@
             background: var(--glass-bg);
             backdrop-filter: var(--glass-blur);
             border: 1px solid var(--glass-border);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 8px 16px #0000009e;
             transform: translateY(20px);
             opacity: 0;
             animation: fadeInUp 0.6s ease forwards;
@@ -188,7 +188,7 @@
             margin: 0 auto 1.5rem;
             border-radius: 50%;
             border: 5px solid white;
-            box-shadow: 0 10px 25px rgba(52, 152, 219, 0.3);
+            box-shadow: 0 10px 25px #0000009e;
             overflow: hidden;
             position: relative;
             transition: all 0.5s ease;
@@ -262,6 +262,7 @@
             font-size: 0.8rem;
             transition: all 0.3s ease;
             transform: scale(1);
+            box-shadow: 0 6px 16px #0000009e;
         }
 
         .tag:hover {
@@ -320,7 +321,7 @@
             overflow: hidden;
             color: white;
             font-weight: 500;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px #0000009e;
             border: 2px solid rgba(255, 255, 255, 0.2);
             background: #333; /* Fallback color */
             background: linear-gradient(135deg, var(--start), var(--end)); /* Dynamic gradient */
@@ -398,7 +399,7 @@
             overflow: hidden;
             color: var(--light);
             border: none;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 8px 20px #0000009e;
             background: var(--light-green); /* Light background with a custom green shade */
         }
 
@@ -434,7 +435,7 @@
 
         /* Heading Styling */
         .project-card h3 {
-            color: var(--dark);
+            color: #000000;
             margin-bottom: 1rem;
             position: relative;
             display: inline-block;
@@ -460,14 +461,14 @@
 
         /* Paragraph Styling */
         .project-card p {
-            color: var(--light);
+            color: #000000;
             margin-bottom: 1.2rem;
             line-height: 1.6;
         }
 
         /* Impact Label Styling */
         .project-card .impact {
-            background: var(--dark);
+            background: #000000;
             display: inline-block;
             padding: 0.4rem 0.8rem;
             border-radius: 20px;
@@ -492,7 +493,7 @@
             left: 0;
             transform: translateX(-50%);
             transition: all 0.3s ease;
-            box-shadow: 0 3px 10px rgba(52, 152, 219, 0.3);
+            box-shadow: 0 3px 10px #0000009e;
         }
 
         .education-item:hover .education-icon {
@@ -529,7 +530,7 @@
             border-radius: 8px;
             background-color: rgba(255, 255, 255, 0.4);
             backdrop-filter: blur(4px);
-            box-shadow: 0 2px 6px #0084ab75;
+            box-shadow: 0 2px 6px #0000009e;
             position: relative;
             transition: all 0.3s ease;
         }
@@ -877,7 +878,7 @@
         
         .project-card p {
             margin-bottom: 0.8rem;
-            color: #555;
+            color: #000000;
         }
         
         .project-card .impact {
@@ -930,7 +931,7 @@
             border-left: 4px solid var(--primary);
             border-radius: var(--border-radius);
             background: var(--light-green); /* Custom variable or fallback */
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 6px 16px #0000009e;
             transition: all 0.3s ease;
         }
 
@@ -946,7 +947,7 @@
         }
 
         .education-item h3 {
-            color: var(--dark);
+            color: #000000;
             margin-bottom: 5px;
             font-size: 1.2rem;
             font-weight: 600;
@@ -960,7 +961,7 @@
         }
 
         .education-major {
-            color: rgba(0, 0, 0, 0.75);
+            color: #972c01;
             font-size: 0.95rem;
             margin-bottom: 5px;
             font-weight: 500;
@@ -992,7 +993,7 @@
             background: var(--glass-bg);
             backdrop-filter: var(--glass-blur);
             border: 1px solid var(--glass-border);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 8px 16px #0000009e;
             transform: translateY(20px);
             opacity: 0;
             animation: fadeInUp 0.6s ease forwards;
@@ -1055,7 +1056,7 @@
             border-radius: 16px;
             padding: 1.5rem;
             margin-bottom: 1.75rem;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 8px 24px #0000009e;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border-left: 5px solid var(--primary);
             position: relative;
@@ -1070,7 +1071,7 @@
         .expertise-item h3 {
             font-size: 1.15rem;
             font-weight: 600;
-            color: var(--dark);
+            color: #000000;
             margin-bottom: 0.5rem;
             display: flex;
             align-items: center;
@@ -1088,7 +1089,7 @@
         }
 
         .expertise-item p {
-            color: #444;
+            color: #000000;
             line-height: 1.75;
             font-size: 0.95rem;
             margin-top: 0.25rem;
@@ -1155,11 +1156,14 @@
         .cta-content {
             position: relative;
             z-index: 1;
+            text-align: center;
         }
         
-        .cta h2 {
+        .cta-content h2 {
             color: white;
-            border-bottom: none;
+            margin-bottom: 15px;
+            font-size: 28px;
+            font-weight: bold;
         }
         
         @media (max-width: 768px) {
@@ -1235,7 +1239,7 @@
             </p>
         
             <p class="fade-in delay-1" style="margin-bottom: 24px;">
-                Skilled in <strong>Excel automation</strong>, <strong>VBA</strong>, <strong>Power BI</strong>, and Tableau, I build scalable solutions to monitor SLA compliance and network performance. I work closely with OSS, NOC, and regional teams.
+                Skilled in <strong>Excel automation</strong>, <strong>VBA</strong>, <strong>Power BI</strong>, and Tableau, I build scalable solutions to monitor SLA compliance and network performance. I work closely with NOC, COS, NPD, and regional teams.
             </p>
         
             <p class="fade-in delay-2" style="margin-bottom: 24px;">
