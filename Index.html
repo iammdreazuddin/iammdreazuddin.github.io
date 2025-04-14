@@ -10,7 +10,7 @@
     <style>
     /* General Transition & Background */
         :root {
-            --primary: #0075ab;
+            --primary: #0e6868;
             --secondary: #ecf0f1;
             --dark: #2c3e50;
             --light: #ecf0f1;
@@ -183,8 +183,8 @@
 
         /* Profile Picture Animation */
         .profile-picture {
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             margin: 0 auto 1.5rem;
             border-radius: 50%;
             border: 5px solid white;
@@ -455,7 +455,7 @@
         /* Hover Effects for Heading Underline */
         .project-card:hover h3::after {
             width: 100%;
-            background: var(--yellow); /* Yellow underline on hover */
+            background: var(--orange); /* Yellow underline on hover */
         }
 
         /* Paragraph Styling */
@@ -473,7 +473,7 @@
             border-radius: 20px;
             font-weight: 500;
             color: var(--light);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(233, 15, 215, 0.63);
         }
 
 
@@ -529,7 +529,7 @@
             border-radius: 8px;
             background-color: rgba(255, 255, 255, 0.4);
             backdrop-filter: blur(4px);
-            box-shadow: 0 2px 6px #00ab6c;
+            box-shadow: 0 2px 6px #0084ab75;
             position: relative;
             transition: all 0.3s ease;
         }
@@ -723,7 +723,7 @@
 
         /* Medium Button Animation */
         .medium-btn {
-            background: var(--medium-green);
+            background: #2c3e50;
             color: white;
             position: relative;
             overflow: hidden;
@@ -797,18 +797,6 @@
             padding: 0 1rem;
         }
         
-        /* h2 {
-            color: var(--primary);
-            border-bottom: 3px solid var(--light-red);
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
-            display: flex;
-            align-items: center;
-        } */
-        
-
-        /* Upgraded h2 */
         h2 {
             position: relative;
             color: var(--primary);
@@ -1094,6 +1082,11 @@
             font-size: 1.2rem;
         }
 
+        .expertise-item:hover h3::after {
+            width: 100%;
+            background: var(--orange); /* Yellow underline on hover */
+        }
+
         .expertise-item p {
             color: #444;
             line-height: 1.75;
@@ -1134,7 +1127,7 @@
         
         .cta {
             text-align: center;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background: linear-gradient(45deg, #00ab6c, #9b59b6);
             color: white;
             padding: 3rem 2rem;
             border-radius: 8px;
@@ -1182,6 +1175,36 @@
                 flex-direction: column;
             }
         }
+
+        /* Smooth Floating Animation */
+        @keyframes floatElement {
+        0% {
+            transform: translate(0, 0);
+        }
+        25% {
+            transform: translate(2px, -4px);
+        }
+        50% {
+            transform: translate(0, -6px);
+        }
+        75% {
+            transform: translate(-2px, -4px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+        }
+
+        /* Optimize performance for elements with animation */
+        .project-card,
+        .skill,
+        .tag,
+        .expertise-item,
+        .education-item,
+        .contact-link {
+        will-change: transform;
+        }
+
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -1206,45 +1229,50 @@
     <div class="container">
         <section id="about" class="about-section">
             <h2><i class="fas fa-user-tie"></i> Professional Profile</h2>
-    
-            <p class="fade-in">
-                With over 5 years of experience in performance reporting and data analytics, I specialize in transforming complex telecom datasets into actionable insights. As Assistant Manager at Summit Communications Ltd., I lead the development of KPI dashboards, management reports, bandwidth analysis, and inconsistency reports to support strategic decision-making.
+        
+            <p class="fade-in" style="margin-bottom: 24px;">
+                With over <strong>5 years</strong> in performance reporting and data analytics, I transform telecom data into insights. As <strong>Assistant Manager</strong> at Summit Communications Ltd., I lead KPI dashboards, management reports, and bandwidth analysis to support decision-making.
             </p>
-    
-            <p class="fade-in delay-1">
-                I’m highly skilled in Excel automation, Macros, and VBA, along with Power BI and Tableau, enabling me to build scalable reporting solutions that monitor network performance, SLA compliance, and service quality. My role involves close collaboration with OSS, NOC, COS, and regional teams to align data insights with operational goals.
+        
+            <p class="fade-in delay-1" style="margin-bottom: 24px;">
+                Skilled in <strong>Excel automation</strong>, <strong>VBA</strong>, <strong>Power BI</strong>, and Tableau, I build scalable solutions to monitor SLA compliance and network performance. I work closely with OSS, NOC, and regional teams.
             </p>
-    
-            <p class="fade-in delay-2">
-                As the lead Excel trainer, I’ve mentored 300+ employees, promoting a culture of data accuracy and efficiency. My background in telecommunications reporting allows me to identify trends, resolve issues proactively, and deliver executive-level presentations that drive performance.
+        
+            <p class="fade-in delay-2" style="margin-bottom: 24px;">
+                As the company’s <strong>lead Excel trainer</strong>, I’ve trained over 300 employees, promoting data accuracy and efficiency. My reporting expertise helps identify trends and deliver impactful presentations.
             </p>
-    
-            <p class="fade-in delay-3">
-                Passionate about process automation and analytics-driven decision-making, I continuously improve reporting workflows to ensure timely and meaningful data delivery. I excel in managing complex datasets, developing automated solutions, and leading cross-functional collaboration to support business growth.
+        
+            <p class="fade-in delay-3" style="margin-bottom: 24px;">
+                Passionate about automation and analytics-driven decisions, I streamline reporting workflows and develop solutions that enable cross-functional collaboration and business growth.
             </p>
-    
+        
             <div class="experience-item fade-in delay-4">
                 <div class="experience-header">
                     <div>
-                        <span class="experience-title">Assistant Manager, Performance Reporting</span>
+                        <span class="experience-title"><strong>Assistant Manager, Performance Reporting</strong></span>
                         <span class="experience-company">
                             <a href="https://www.summitcommunications.net/" target="_blank" rel="noopener noreferrer">
-                                Summit Communications Ltd.
+                                <strong>Summit Communications Ltd.</strong>
                             </a>
                         </span>
                     </div>
-                    <span class="experience-duration">2019 - Present</span>
+                    <span class="experience-duration"><strong>2019 - Present</strong></span>
                 </div>
-                <p>OSS Department | Reporting to Head of Service Assurance</p>
-                <ul class="fade-in delay-5">
-                    <li>Oversee the creation and distribution of detailed performance reports for internal and external stakeholders.</li>
-                    <li>Collaborate with cross-functional teams to analyze data trends and ensure service-level agreements (SLAs) are met.</li>
-                    <li>Develop and implement automated reporting solutions, reducing manual effort and enhancing reporting accuracy.</li>
-                    <li>Provide actionable insights on network efficiency, resource utilization, and service quality to senior leadership.</li>
-                    <li>Assist in data-driven decision-making to support strategic initiatives aimed at improving customer experience and service reliability.</li>
+                <p style="margin-bottom: 20px;">
+                    <strong>OSS Department</strong> | Reporting to <strong>Head of Service Assurance</strong>
+                </p>
+                
+                <ul class="fade-in delay-5" style="line-height: 1.8; margin-bottom: 30px;">
+                    <li><strong>Oversee</strong> the creation and distribution of detailed performance reports for internal and external stakeholders.</li>
+                    <li><strong>Collaborate</strong> with cross-functional teams to analyze data trends and ensure service-level agreements (SLAs) are met.</li>
+                    <li><strong>Develop and implement</strong> automated reporting solutions, reducing manual effort and enhancing reporting accuracy.</li>
+                    <li><strong>Provide actionable insights</strong> on network efficiency, resource utilization, and service quality to senior leadership.</li>
+                    <li><strong>Assist</strong> in data-driven decision-making to support strategic initiatives aimed at improving customer experience and service reliability.</li>
                 </ul>
+                
             </div>
         </section>
+        
         
         
         <section id="expertise">
@@ -1554,11 +1582,12 @@
             // Run on scroll
             window.addEventListener('scroll', animateOnScroll);
             
-            // Add floating animation to random elements
-            const floatingElements = document.querySelectorAll('.project-card, .skill');
+            // Add floating animation to random elements more smoothly
+            const floatingElements = document.querySelectorAll('.project-card, .skill, .tag, .expertise-item, .education-item, .contact-link');
+
             floatingElements.forEach(el => {
-                const delay = Math.random() * 5;
-                const duration = 5 + Math.random() * 5;
+                const delay = Math.random() * 4; // smoother, shorter delay
+                const duration = 6 + Math.random() * 4; // 6s to 10s duration
                 el.style.animation = `floatElement ${duration}s ease-in-out ${delay}s infinite`;
             });
     
